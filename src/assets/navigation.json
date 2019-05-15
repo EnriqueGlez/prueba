@@ -1,0 +1,90 @@
+{
+    "navigation": [
+        {
+            "title"    : "DASHBOARDS",
+            "children" : [
+                {
+                    "title"    : "Analytics",
+                    "icon"     : "fas fa-chart-pie",
+                    "url"      : "/test"
+                },
+                {
+                    "title"    : "Online Store",
+                    "icon"     : "fas fa-store-alt",
+                    "url"      : "/test"
+                },
+                {
+                    "title"    : "Personal Blog",
+                    "icon"     : "fas fa-pencil-alt",
+                    "url"      : "/test"
+                }
+            ]
+        },
+        {
+            "title"    : "TEMPLATES",
+            "children" : [
+                {
+                    "title"    : "User Account",
+                    "icon"     : "fas fa-user",
+                    "url"      : "/user"
+                },
+                {
+                    "title"    : "File Managers",
+                    "icon"     : "fas fa-folder",
+                    "url"      : "/test"
+                },
+                {
+                    "title"    : "Transaction History",
+                    "icon"     : "fas fa-history",
+                    "url"      : "/test"
+                },
+                {
+                    "title"    : "Add New Post",
+                    "icon"     : "fas fa-file-medical",
+                    "url"      : "/admin/calendar"
+                },
+                {
+                    "title"    : "Errors",
+                    "icon"     : "fas fa-exclamation-circle",
+                    "url"      : "/test"
+                }
+            ]
+        },
+        {
+            "title"    : "COMPONENTS",
+            "children" : [
+                {
+                    "title"    : "Overview",
+                    "icon"     : "fas fa-grip-horizontal",
+                    "url"      : "/test"
+                },
+                {
+                    "title"    : "Tables",
+                    "icon"     : "fas fa-table",
+                    "url"      : "/test"
+                },
+                {
+                    "title"    : "Blog Posts",
+                    "icon"     : "fas fa-ethernet",
+                    "url"      : "/test"
+                }
+            ]
+        },
+        {
+            "title"    : "LAYOUTS",
+            "children" : [
+                {
+                    "title"    : "Header Nav",
+                    "icon"     : "fas fa-server",
+                    "url"      : "/test"
+                },
+                {
+                    "title"    : "Icon Sidebar",
+                    "icon"     : "fas fa-chart-line",
+                    "url"      : "/test"
+                }
+            ]
+        }
+    ]
+
+}

@@ -1,0 +1,21 @@
+
+.navigation-menu{
+    padding: 90px;
+    margin-left: 20px;
+}
+.dropdown-title{
+    margin-block-end: 0em;
+    margin-left: 30px;
+    color: #b0b7bf;
+    font-size: 14px;
+    font-weight: 500;
+}
+i{
+    color: #b0b7bf;
+}
+.child-tilte{
+    margin-left: 10px;
+}
+.active {
+   color: #007bff !important;
+} 

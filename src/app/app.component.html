@@ -1,0 +1,19 @@
+<div class="wrapper">
+
+  <!-- Sidebar  -->
+  <app-sidebar [activeSlidebar]="initialActive"></app-sidebar>
+
+  <!-- Page Content  -->
+  <div id="content">
+
+    <!-- Navbar  -->
+    <app-navbar [isActive]="initialActive" (myOutput)="activeSidevar($event)" ></app-navbar>
+
+    <div class="conteiner">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+
+
+</div>

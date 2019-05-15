@@ -1,0 +1,136 @@
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    min-width: 320px;
+    max-height: auto;
+    border-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-header{
+    width: 100%;
+    height: 140px;
+    background-image: url('/assets/img/mountain.jpg') !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff !important;
+}
+.card-body{
+    width: 100%;
+    background-color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.nav-link {
+    color: #007bff;
+}
+.card-title{
+    margin-top: 10px;
+}
+
+.tab-content{ 
+    min-height: 350px;
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+}
+
+.square {
+    width:100%;
+    height:25vh;
+    max-height:100px;
+    position:relative;
+    border: 1px solid silver;
+    padding: 10px;
+}
+.chip {
+    width: 150px;
+    border-radius: 20px;
+    border: 1px solid silver;
+    background-color: #fbfbfb;
+}
+
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #4caf50;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #4caf50;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .btn-background{
+    margin-top: 40px; color: #fff !important; border-color: #fff;
+    background-color: transparent;
+    border: dotted;
+  }
+
+  
+  

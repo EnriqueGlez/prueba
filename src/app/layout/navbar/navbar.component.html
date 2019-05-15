@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <form class="form-inline my-2 my-lg-0">
+                <label>
+                    <input class="form-control mr-sm-2" type="search"aria-label="Search" name="search" [(ngModel)]="search">
+                    <span *ngIf="!search"><i class="fas fa-search"></i> Search for something..</span>
+                </label>
+        </form>
+    </div>
+    
+    <a class="nav-link" id="bell" href="#" style="border-right: 1px solid rgb(182, 178, 178); border-left: 1px solid rgb(182, 178, 178);">
+        <i class="fa fa-bell"></i>
+    </a>
+
+        <div class="avatar-dropdown  my-2 my-lg-0 collapse navbar-collapse"  style="max-width:200px;">
+            <a  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"  class="dropdown-toggle" aria-expanded="false">
+                <img src="assets/img/profile.jpg" alt="Avatar" class="md-avatar rounded-circle size-6">
+                Marco Félix
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                <a class="dropdown-item" href="#">My profile</a>
+                <a class="dropdown-item" href="#">Exit</a>
+            </div>
+         </div>
+   
+         <h1  id="navbar-toggler"  class="navbar-toggler" style="max-width:200px;"> 
+                <a class="nav-link text-center" data-toggle="collapse"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/img/profile.jpg" alt="Avatar" class="md-avatar rounded-circle size-6">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    
+                    <a class="dropdown-item" href="#">My profile</a>
+                    <a class="dropdown-item" href="#">Exit</a>
+                </div>
+         </h1>
+        
+        <button (click)="toggleClass()"  class="navbar-toggler" type="button" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+</nav>

@@ -1,0 +1,219 @@
+
+<div class="user">
+
+    <div class="card">   
+      
+      <div class="card-header bg-info text-left text-light text-center">
+          <button type="button"  class="btn btn-background"  (click)="fileInput.click()" > <i class="fas fa-camera" ></i> <span> Change Background Photo</span></button>
+      </div>
+ 
+    <div class="card-body ">
+  <!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home">General</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu1">Projects</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu2">Collaboration</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane container active" id="home">
+
+      <h5 class="card-title">General</h5> 
+      <h6 class="card-subtitle mb-2 text-muted">Setup your general profile details</h6>
+      <div class="row" style="margin-top:20px;">
+        <div class="col-lg-7 col-md-12">
+            <form class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom03">Location</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Location" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom04">Phone Number</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="Phone Number" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationCustom03">Email</label>
+                      <input type="text" class="form-control" id="validationCustom03" placeholder="Email" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationCustom04">Display Email Publicly</label>
+                      <input type="number" class="form-control" id="validationCustom04" placeholder="Yes, display my email" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid state.
+                      </div>
+                    </div>
+                  </div>
+      
+            </form>
+        </div>
+        <div class="col-lg-5 col-md-12 text-center">
+            <h6 class="card-subtitle mb-2 text-muted"> Profile Picture </h6>
+            <br class="hidden-xs"/>
+            <img src="assets/img/profile.jpg" alt="Avatar" class="avatar rounded-circle size-6" *ngIf="!img">
+            <img [src]="img" alt="Avatar" class="avatar rounded-circle size-6" *ngIf="img">
+            <br class="hidden-xs"/>
+            <br class="hidden-xs"/>
+            <input hidden type="file" id="myFile" #fileInput (change)="onChange($event)" accept="image/*">
+            <button type="button" class="btn btn-outline-secondary"  (click)="fileInput.click()" > <i class="fas fa-cloud-upload-alt" ></i> Upload Image</button>
+        </div>
+
+
+      </div>
+
+      <div class="row" style="margin-top:20px;">
+          <div class="col-lg-6 col-md-12">
+          <div class="form-group">
+              <label for="exampleFormControlTextarea1">Bio</label>
+              <textarea class="form-control" placeholder="I'm a desing focused engineer." id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+
+          <div class="form-group">
+              <label for="exampleFormControlTextarea1">Tags</label>
+              <div class="square">
+  
+              </div>
+              </div>
+          </div>
+    
+      </div>
+
+      <div class="dropdown-divider"></div>
+      
+      <h5 class="card-title">Notifications</h5> 
+      <h6 class="card-subtitle mb-2 text-muted">
+        Send notifications emails with updates for the conversations you are participing in or if someone mentions you.
+      </h6>
+
+      <div class="row" style="margin-top:20px;">
+          <div class="col-10">
+            <h5 class="card-title">Conversations</h5> 
+            <h6 class="card-subtitle mb-2 text-muted">Setup which notifications would you like to recive.</h6>
+          </div>
+          <div class="col-2">
+             <!-- Rounded switch -->
+             <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+          </div>
+   
+      </div>
+
+      <div class="row" style="margin-top:20px;">
+          <div class="col-10">
+            <h5 class="card-title">New Projects</h5> 
+            <h6 class="card-subtitle mb-2 text-muted">
+              Send notificacions emails when you are invited to a new project.
+            </h6>
+          </div>
+          <div class="col-2">
+             <!-- Rounded switch -->
+             <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+          </div>
+   
+      </div>
+
+      <div class="row" style="margin-top:20px;">
+          <div class="col-10">
+            <h5 class="card-title">Vulnerability Alerts</h5> 
+            <h6 class="card-subtitle mb-2 text-muted">
+                Send notificacions emails when everything goes down and there's no hope left whatsover.
+            </h6>
+          </div>
+          <div class="col-2">
+             <!-- Rounded switch -->
+             <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+          </div>
+   
+      </div>
+
+      <div class="dropdown-divider"></div>
+
+      <h5 class="card-title">Change Password</h5> 
+      <h6 class="card-subtitle mb-2 text-muted">
+        Change your current password.
+      </h6>
+      <form class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom01">Old Password</label>
+              <input type="password" class="form-control" id="validationCustom01" placeholder="Old Password" value="Mark" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom02">New Password</label>
+              <input type="password" class="form-control" id="validationCustom02" placeholder="New Password" value="Otto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Repeat Password</label>
+                <input type="password" class="form-control" id="validationCustom02" placeholder="Repeat Password" value="Otto" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+          </div>
+        </form>
+        <div class="text-right">
+            <button class="btn btn-primary" type="submit">Save Changes</button>
+        </div>
+
+  </div>
+  <div class="tab-pane container fade" id="menu1"></div>
+  <div class="tab-pane container fade" id="menu2"></div>
+</div>
+    </div>
+  </div>
+
+  
+
+  
+</div>
+

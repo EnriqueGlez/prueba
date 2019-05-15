@@ -1,0 +1,31 @@
+<nav id="sidebar" [ngClass]="{'active': activeSlidebar}">
+    <div class="sidebar-header">
+      <div class="logo"> 
+          <img class="logo-img" src="assets/img/music.png">
+          <span class="logo-text">Comparale</span>
+      </div>
+    </div>
+    <div *ngFor="let item of items">
+      <div class="dropdown-divider"></div>
+        <p class="dropdown-title">{{ item.title }}</p>
+      <div class="dropdown-divider"></div> 
+      <ul class="list-unstyled components" *ngIf="item.children">
+          <li *ngFor="let child of item.children">
+
+            <a class="navigation-menu" href="#homeSubmenu" style="margin-left: 20px;" data-toggle="collapse" class="dropdown-toggle"   *ngIf="child.url && child.title === 'User Account' || child.title === 'File Managers'"  routerLinkActive="active"  [routerLink]="child.url" routerLinkActiveOptions="{exact:true}">
+                <i class="{{ child.icon }}"></i>
+                <span class="child-tilte"  routerLinkActive="active"> 
+                  {{ child.title }}
+                </span>
+            </a>
+
+            <a class="navigation-menu" *ngIf="child.url && child.title !== 'User Account' && child.title !== 'File Managers'"   routerLinkActive="active"  [routerLink]="child.url" routerLinkActiveOptions="{exact:true}">
+                <i class="{{ child.icon }}"></i>
+                <span class="child-tilte"  routerLinkActive="active"> 
+                  {{ child.title }}
+                </span>
+            </a>
+          </li>
+      </ul>
+    </div>
+</nav>
